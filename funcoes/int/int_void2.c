@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int AnoAtual();
+int AnoAtual(void);
 
 int main(){
 	
-	printf("%d\n", AnoAtual());
+	printf("%d\n", AnoAtual(void));
 	
     return 0;
 }
 
-int AnoAtual() {
+int AnoAtual(void) {
     return 2026;
 }

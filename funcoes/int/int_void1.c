@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int AnoAtual() {
+int AnoAtual(void) {
     return 2026;
 }
 
 int main(){
 	
-	printf("%d\n", AnoAtual());
+	printf("%d\n", AnoAtual(void));
 	
     return 0;
 }

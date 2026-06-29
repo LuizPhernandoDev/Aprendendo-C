@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-char PrimeiraAlfabeto();
+char PrimeiraAlfabeto(void);
 
 int main(){
 	
-	printf("%c\n", PrimeiraAlfabeto());
+	printf("%c\n", PrimeiraAlfabeto(void));
 	
 	
     return 0;
 }
 
-char PrimeiraAlfabeto() {
+char PrimeiraAlfabeto(void) {
     return 'A';
 }

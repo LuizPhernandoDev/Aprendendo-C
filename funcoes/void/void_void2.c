@@ -1,15 +1,14 @@
 #include <stdio.h>
 
-//quando o parametro é void ele pode ser vazio
-void OlaMundo();
+void OlaMundo(void);
 
 int main(){
 	
-	OlaMundo();
+	OlaMundo(void);
 	
     return 0;
 }
 
-void OlaMundo() {
+void OlaMundo(void) {
     printf("Ola, Mundo!\n");
 }

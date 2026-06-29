@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 //retorna apenas um caracter
-char PrimeiraAlfabeto() {
+char PrimeiraAlfabeto(void) {
     return 'A';
 }
 
 int main(){
 	
-	printf("%c\n", PrimeiraAlfabeto());
+	printf("%c\n", PrimeiraAlfabeto(void));
 	
 	
     return 0;

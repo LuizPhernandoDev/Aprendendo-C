@@ -1,3 +1,6 @@
+/*por mais que esse tipo é nativa da linguagem,
+coloquei ele aqui para ficar mais compreensivo
+*/
 #include <stdio.h>
 
 int main() {

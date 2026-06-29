@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado modificadores(short, long, unsigned) e receber qualquer tipo de parametro(int, char, float, double) ate com modificadores
 int Soma(int A, int B);
 
 int main(){

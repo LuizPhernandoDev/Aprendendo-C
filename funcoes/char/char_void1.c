@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado modificadores(short, long, unsigned)
 //retorna apenas um caracter
 char PrimeiraAlfabeto(void) {
     return 'A';

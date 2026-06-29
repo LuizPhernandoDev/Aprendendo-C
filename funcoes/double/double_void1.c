@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado modificadores(short, long, unsigned)
 double obterPi(void) {
     return 3.1415926535;
 }

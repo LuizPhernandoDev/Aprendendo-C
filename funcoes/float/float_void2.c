@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado modificadores(short, long, unsigned)
 float obterGravidadeTerrestre(void);
 
 int main() {

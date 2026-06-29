@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado modificadores(short, long, unsigned)
 float obterGravidadeTerrestre(void) {
     return 9.81f; // O 'f' indica explicitamente que este número é um float
 }

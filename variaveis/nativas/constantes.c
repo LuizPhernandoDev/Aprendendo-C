@@ -2,8 +2,8 @@
 
 //estrutura de definição de constantes
 #define PI 3.141592653
-#define dias 7
-#define comprimento "Ola"
+#define DIAS 7
+#define COMPRIMENTO "Ola"
 
 int main() {
     
@@ -13,9 +13,9 @@ int main() {
     printf("Perimetro: %f\n", 2*PI*Raio);
     printf("Area: %f\n", PI*Raio*Raio);
     
-    printf("Dias da semana: %d\n", dias);
+    printf("Dias da semana: %d\n", DIAS);
     
-    printf("%s mundo!\n", comprimento);
+    printf("%s mundo!\n", COMPRIMENTO);
 	
     return 0;
 }

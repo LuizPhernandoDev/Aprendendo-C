@@ -31,4 +31,6 @@ int main(){
 			printf("Numero invalido!");
 			break;
 	}
+
+	return 0;
 }

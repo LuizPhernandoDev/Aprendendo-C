@@ -6,7 +6,7 @@ void OlaMundo(void){
 
 int main(){
 	
-	OlaMundo(void);
+	OlaMundo();
 	
     return 0;
 }

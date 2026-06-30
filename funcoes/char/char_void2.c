@@ -5,7 +5,7 @@ char PrimeiraAlfabeto(void);
 
 int main(){
 	
-	printf("%c\n", PrimeiraAlfabeto(void));
+	printf("%c\n", PrimeiraAlfabeto());
 	
     return 0;
 }

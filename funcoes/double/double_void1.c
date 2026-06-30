@@ -7,7 +7,7 @@ double obterPi(void) {
 
 int main() {
     double raio = 2.0;
-    double area = obterPi(void) * (raio * raio); 
+    double area = obterPi() * (raio * raio); 
     
     printf("A area eh: %.4f\n", area);
     

@@ -7,7 +7,7 @@ int AnoAtual(void) {
 
 int main(){
 	
-	printf("%d\n", AnoAtual(void));
+	printf("%d\n", AnoAtual());
 	
     return 0;
 }

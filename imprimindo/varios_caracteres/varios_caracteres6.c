@@ -2,9 +2,9 @@
 
 int main(){
 	
-	char OlaMundo[] = {'O', 'l', 'a', ' ', 'm', 'u', 'n', 'd', 'o', '!', '\n'};
+	char OlaMundo[][10] = {{"Ola "}, {"mundo!"}};
 	
-	printf("%s", OlaMundo);
+	printf("%s%s", OlaMundo[0], OlaMundo[1]);
 	
 	return 0;
 }

@@ -13,7 +13,7 @@ int main(){
 	scanf("%f", &altura);
 	
 	printf("Digite seu nome: ");
-	//o unico que não precisa de um &antes da variavel
+	//o unico que não precisa de um & antes da variavel
 	scanf("%s", nome);
 	
 	printf("\nDados informados:\n\n");

@@ -6,9 +6,11 @@ struct TipoPessoa{
 	char nome[50];
 };
 
+typedef struct TipoPessoa TipoPessoa;
+
 int main(){
 	
-	struct TipoPessoa Pessoa = { 20, 83.0, "Luiz Phernando"};
+	TipoPessoa Pessoa = { 20, 83.0, "Luiz Phernando"};
 	
 	Pessoa.idade = 19;
 	Pessoa.peso = 80.0;

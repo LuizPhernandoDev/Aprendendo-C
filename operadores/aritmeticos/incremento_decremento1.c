@@ -8,7 +8,13 @@ int main(){
 	dado++;
 	printf("Dado depois do incremento: %d.\n", dado);
 	
+	++dado;
+	printf("Dado depois do incremento: %d.\n", dado);
+	
 	dado--;
+	printf("Dado depois do descremento %d.\n", dado);
+	
+	--dado;
 	printf("Dado depois do descremento %d.\n", dado);
 	
 	dado+=3;
@@ -22,6 +28,9 @@ int main(){
 	
 	dado/=5;
 	printf("Dado depois de divir por 5: %d.\n", dado);
+	
+	dado%=3;
+	printf("resto da divisao por 3: %d.\n", dado);
 
-	return0;
+	return 0;
 }

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-//estrutura de definição de constantes
 #define PI 3.141592653
 #define DIAS 7
 #define COMPRIMENTO "Ola"

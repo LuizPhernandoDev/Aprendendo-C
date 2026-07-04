@@ -3,14 +3,15 @@
 
 int main(){
 	
-	int X, Y, Z;
-	X = 5;
-	Y = 10;
+	int Z;
+	// Z "recebe" se condicao for verdadeira 1 se não recebe 0
+	Z = true ? 1 : 0;
 	
-	// Z "recebe" se condicao for verdadeira X se não recebe Y
-	Z = X > Y ? X : Y;
+	printf("%d\n", Z);   //imprime 1
 	
-	printf("%d\n", Z);
+	Z = false ? 1 : 0;
+	
+	printf("%d\n", Z);   //imprime 0
 	
 	return 0;
 }

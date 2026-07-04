@@ -3,13 +3,16 @@
 
 int main(){
 	
-	int X, Y;
-	X = 5;
-	Y = 10;
-	
-	(X > Y ) ? printf("X é maior\n")
-			 : printf("Y é maior\n");
-	
-	
+	(true)?
+		printf("X é maior\n")
+		:
+		printf("Y é maior\n")
+		;
+	(false)?
+		(printf("X é maior"), printf(" e o Y é menor\n"))
+		:
+		(printf("Y é maior"), printf(" e o X é menor\n"))
+		;
+		
 	return 0;
 }

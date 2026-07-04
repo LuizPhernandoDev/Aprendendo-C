@@ -5,7 +5,7 @@ int main(){
 	
 	printf("Digite algo (leitura pelo gets): ");
 	gets(s);
-	fflush(stdin);
+	//o gets entende o \n como finalização da leiura
 	
 	puts("Resultado: ");
 	puts(s);
@@ -13,8 +13,8 @@ int main(){
 	
 	printf("Digite algo (leitura pelo fgets): ");
 	fgets (s, 10, stdin);   //pode ser colocado um sizeof no numeral para retornar o tamanho do vetor
-	fflush(stdin);
-	
+	//o fgets entende o \n como finalização da leiura
+
 	puts("Resultado: ");
 	puts(s);
 	puts("");

@@ -17,9 +17,10 @@ int main(){
 		printf("Acesso negado!\n");
 	}
 	
+	flag = 0;
 	printf("Digite a senha: ");
 	//optar por usar fgets
-	fgets(senha);
+	fgets(senha, sizeof(senha), stdin);
 	if(strcmp(senha, "1234") == 0){
 		flag++;
 	}

@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//não é preciso colocar o parametro no prototipo da funcao
 int fatorial(int n);
 
 int main() {

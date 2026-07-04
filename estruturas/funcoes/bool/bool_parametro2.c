@@ -2,6 +2,7 @@
 #include <stdbool.h>
 
 //receber qualquer tipo de parametro(int, char, float, double) ate com modificadores
+//não é preciso colocar o parametro no prototipo da funcao
 bool Teste(bool afirmacao);
 
 int main() {

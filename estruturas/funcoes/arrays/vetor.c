@@ -12,9 +12,9 @@ void imprime2(int *v,int n){
 		printf("%d",v[i]);
 	}
 }
-void imprime3(int v[5]){
+void imprime3(int v[5], int n){
 	int i;
-	for(i=0;i<5;i++){
+	for(i=0;i<n;i++){
 		printf("%d",v[i]);
 	}
 }
@@ -22,11 +22,13 @@ int main(){
 	int vet[5]={1,2,3,4,5};
 	
 	puts("Primeiro imprime: ");
-	imprime1(vet, 5);
+	imprime1(vet, 5);   //podia ter colocado o tamanho com o sizeof
 	
 	puts("\nSegundo imprime: ");
-	imprime2(vet, 5);
+	imprime2(vet, 5);   //podia ter colocado o tamanho com o sizeof
 	
 	puts("\nTerceiro imprime: ");
-	imprime3(vet);
+	imprime3(vet, 5);   //podia ter colocado o tamanho com o sizeof
+
+	return 0;
 }

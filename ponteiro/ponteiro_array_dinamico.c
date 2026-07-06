@@ -21,5 +21,6 @@ int main() {
     
     //libera o espaco para o computador apos terminar
     free(array_dinamico); 
+    
     return 0;
 }

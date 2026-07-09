@@ -4,36 +4,21 @@
 int main() {
     FILE *f;
 
-    f = fopen("texte1.txt", "r");
+    f = fopen("texte1.txt", "w");
 
     if (f == NULL) {
         printf("Erro: O arquivo não existe ou não pôde ser aberto.\n");
+        return 1;
     }
     
-    char c;
+    char texto[20] = "Ola mundo!\n";
     int i;
     
-    //le o arquivo, caracter a caracter
+    //grava no arquivo, a string, caracter a caracter
     //se houver erro retorna a contante EOF(-1)
-    //le ate 11 caracteres
-    for(i=0; i<11; i++){
-    	c = fgetc(f);
-    	printf("%c", c);
+    for(i=0; i<strlen(texto); i++){
+    	fputc(texto[i], f);
 	}
-    
-    fclose(f);
-    
-    f = fopen("texte1.txt", "r");
-
-    if (f == NULL) {
-        printf("Erro: O arquivo não existe ou não pôde ser aberto.\n");
-    }
-    
-    //le todos os caracteres do arquivo ate o final
-	do{
-		c = fgetc(f);
-    	printf("%c", c);
-	}while(c != EOF);
     
     fclose(f);
 

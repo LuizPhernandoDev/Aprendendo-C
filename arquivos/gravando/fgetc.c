@@ -8,14 +8,14 @@ int main() {
 
     if (f == NULL) {
         printf("Erro: O arquivo não existe ou não pôde ser aberto.\n");
+        return 1;
     }
     
     char c;
     int i;
     
-    //le o arquivo, caracter a caracter
+    //le o arquivo, caracter a caracter, ate 11 caracteres
     //se houver erro retorna a contante EOF(-1)
-    //le ate 11 caracteres
     for(i=0; i<11; i++){
     	c = fgetc(f);
     	printf("%c", c);
@@ -27,6 +27,7 @@ int main() {
 
     if (f == NULL) {
         printf("Erro: O arquivo não existe ou não pôde ser aberto.\n");
+        return 1;
     }
     
     //le todos os caracteres do arquivo ate o final

@@ -7,12 +7,12 @@ int main() {
 
     if (f == NULL) {
         printf("Erro: O arquivo não existe ou não pôde ser aberto.\n");
-    } else {
-        printf("Arquivo aberto com sucesso!\n");
-        // ... faz a leitura aqui ...
-        
-        fclose(f); // fechando o arquivo!
+        return 1;
     }
+     printf("Arquivo aberto com sucesso!\n");
+    // ... faz a leitura aqui ...
+    
+    fclose(f); // fechando o arquivo!
 
     return 0;
 }

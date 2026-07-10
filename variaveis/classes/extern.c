@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "config.c"
 
+//para rodar é preciso incluir o nome do arquivo, que esteja na mesma pasta, como se fosse uma biblioteca
 // Avisa ao compilador que essa variável vem de outro arquivo
 extern int VELOCIDADE_MAXIMA; 
 

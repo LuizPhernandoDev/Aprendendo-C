@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//pode ser usado com contantes
 #define PI 3.141592653
 #define DIAS 7
 #define COMPRIMENTO "Ola"

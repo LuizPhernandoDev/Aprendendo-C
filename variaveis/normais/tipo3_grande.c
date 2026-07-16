@@ -15,12 +15,13 @@ int main(){
 	// valores de ponto flutuanes(com casas decimais)
 	long double Double;
 	
-	printf("Tipos de variaveis | Especificadores | Tamanho (Bytes) |                  Intervalo\n");
-	printf("                   |   de formato    |                 |\n");
-	printf("-------------------|-----------------|-----------------|--------------------------------------------\n");
-	printf("     long int      |       %%ld       |        %zu        |          %ld a %ld         \n", sizeof(long int), LONG_MIN, LONG_MAX);
-	printf("   long long int   |       %%lld      |        %zu        | %lld a %lld            \n", sizeof(long long int), LLONG_MIN, LLONG_MAX);
-	printf("    long double    |       %%Lf       |        %zu       |      %Le a %Le            \n", sizeof(long double) , -LDBL_MIN, LDBL_MAX);
+	//constantes define que o numer seja tratado como definido
+	printf("Tipos de variaveis | Especificadores | Tamanho (Bytes) | Constantes |                  Intervalo\n");
+	printf("                   |   de formato    |                 |            |\n");
+	printf("-------------------|-----------------|-----------------|------------|--------------------------------------------\n");
+	printf("     long int      |       %%ld       |        %zu        |      L     |          %ld a %ld         \n", sizeof(long int), LONG_MIN, LONG_MAX);
+	printf("   long long int   |       %%lld      |        %zu        |     LL     | %lld a %lld            \n", sizeof(long long int), LLONG_MIN, LLONG_MAX);
+	printf("    long double    |       %%Lf       |        %zu       |      L     |      %Le a %Le            \n", sizeof(long double) , -LDBL_MAX, LDBL_MAX);
 	
   return 0;
 }

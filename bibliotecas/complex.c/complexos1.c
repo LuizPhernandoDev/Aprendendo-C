@@ -4,7 +4,7 @@
 int main() {
     // Declarando dois números complexos   
 	/*
-	pode ser feita com qualquer tipo de ponto flutuante, 
+	deve ser feita com qualquer tipo de ponto flutuante, 
 	mas se não for double deve adicionar um sufixo
 	f para float e l para long double
 	*/

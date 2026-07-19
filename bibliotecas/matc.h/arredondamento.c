@@ -11,7 +11,7 @@ int main() {
     printf("Arredonda para o inteiro mais próximo (matemática comum): %.1lf\n", round(a));
     printf("Retorna o resto da divisão entre dois números decimais: %.1lf\n", fmod(a, b));
     
-    double fracao = modf(a, &c);  // fix fora do printf para ter certexa que o compilador iria executar a funcao primeiro
+    double fracao = modf(a, &c);  // fiz fora do printf para ter certexa que o compilador iria executar a função primeiro
     
     printf("Separa e retorna a fração, gravando o inteiro no ponteiro c: decimal = %.1lf e inteiro = %.1lf\n", fracao, c);
 

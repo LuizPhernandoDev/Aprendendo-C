@@ -7,6 +7,7 @@ int main() {
 	mas se não for double deve adicionar um sufixo
 	f para float e l para long double
 	*/
+//existe a biblioteca tgmath.h que une as duas bibliotecas matematicas e adiciona mais funcoes
     double x = 3.0, y = 4.0;
     double a = 25.0, b = 27.0;
     double negativo = -4.5;

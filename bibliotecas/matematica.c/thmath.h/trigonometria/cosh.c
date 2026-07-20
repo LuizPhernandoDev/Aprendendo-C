@@ -1,3 +1,4 @@
+#define __USE_MINGW_ANSI_STDIO 1
 #include <stdio.h>
 #include <tgmath.h>
 
@@ -17,6 +18,6 @@ int main() {
     printf("float complex: %f + %fi\n", creal(cosh(fc)), cimag(cosh(fc)));
     printf("double complex: %f + %fi\n", creal(cosh(dc)), cimag(cosh(dc)));
     printf("long double complex: %Lf + %Lfi\n", creal(cosh(ldc)), cimag(cosh(ldc)));
-    
+
     return 0;
 }

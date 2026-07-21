@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    int i, qtd = 5;
-    /*alem de reservar espaço na memoria, 
-    o calloc coloca um 0 em todos os bits das posições reservadas
-    (toda posição de um tipo numero é preencida com um 0)
-    */
-    int* array_dinamico = (int *)calloc(qtd, sizeof(int));     // pede ao sistema operacional o espaco exato (5 espaços de 4 bytes)
+struct alunos{
+	char nome[40];
+	int matriculas;
+	int notas[];   //nao ocupa espaco da memoria
+};
 
-    if (array_dinamico == NULL) {
-        printf("Erro ao alocar memória!\n");
-        return 1; 
-    }
+int main(){
+	struct alunos *p;
+	int qtd = 5;
+	p = malloc(sizeof(struct alunos) + sizeof(int) * qtd);   //peço para criar um espaco na memoria do tamanho da struct mais a quantidade desejada 
 
-    for(i = 0; i < qtd; i++) {
-        array_dinamico[i] = (i + 1) * 10;
-    }
+/*   //*p equivale a essa estrutura 
+struct alunos{
+	char nome[40];
+	int matriculas;
+	int notas[5];   
+};
+*/
 
-    for(i = 0; i < qtd; i++) {
-        printf("%d ", array_dinamico[i]);
-    }
-    
-    free(array_dinamico); 
-    
-    return 0;
+	(*p).notas[3] = 7;
+	printf("Quarta nota: %d\n", (*p).notas[3]);
+    printf("Tamanho da union: %lu bytes\n", sizeof(p));
+		
+	return 0;
 }

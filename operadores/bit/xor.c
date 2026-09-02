@@ -22,6 +22,7 @@ int main(){
     printf("%d\n", a ^ 80);    //imprime 65 
     printf("%d\n", 17 ^ b);    //imprime 65 
     printf("%d\n", 17 ^ 80);   //imprime 65 
+	
 	printf("%c\n", a ^ b);     //imprime A 
     printf("%c\n", a ^ 80);    //imprime A 
     printf("%c\n", 17 ^ b);    //imprime A

@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// No Windows/MSVC moderno, 'stricmp' pode ser deprecado a favor de '_stricmp'.
-// Descomente a linha abaixo se o seu compilador exigir o prefixo com underline:
-// #define stricmp _stricmp
-
 int main(){
     // stricmp compara duas strings ignorando maiúsculas/minúsculas.
     // Retorna 0 quando são exatamente iguais em conteúdo.
